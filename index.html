@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Danh sách sản phẩm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="header">
+      <div class="title">Danh sách sản phẩm</div>
+
+      <div class="header-right">
+        <input id="q" class="search" placeholder="Tìm theo tiêu đề / slug / loại">
+        <span id="count" class="count"></span>
+      </div>
+    </div>
+
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Tiêu đề</th>
+            <th class="col-slug">Slug</th>
+            <th>Giá</th>
+            <th class="col-desc">Mô tả</th>
+            <th class="col-cat">Loại</th>
+            <th>Ảnh</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
